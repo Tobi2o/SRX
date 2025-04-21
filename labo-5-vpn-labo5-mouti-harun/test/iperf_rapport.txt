@@ -1,0 +1,54 @@
+*** Test de openvpn ***
+MainS vers FarS
+    Exécution du client iperf sur MainS vers le serveur 10.0.2.2
+[  1] local 10.0.7.1 port 45804 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0176 sec  1.58 GBytes  1.35 Gbits/sec
+MainC1 vers FarC1
+    Exécution du client iperf sur MainC1 vers le serveur 10.0.2.10
+[  1] local 10.0.1.10 port 33660 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0121 sec   997 MBytes   836 Mbits/sec
+Remote vers FarC2
+    Exécution du client iperf sur Remote vers le serveur 10.0.2.11
+[  1] local 10.0.7.10 port 52758 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0158 sec   975 MBytes   817 Mbits/sec
+=== Fin du rapport pour openvpn ===
+
+*** Test de wireguard ***
+MainS vers FarS
+    Exécution du client iperf sur MainS vers le serveur 10.0.2.2
+[  1] local 10.0.7.1 port 57660 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0277 sec  1.20 GBytes  1.02 Gbits/sec
+MainC1 vers FarC1
+    Exécution du client iperf sur MainC1 vers le serveur 10.0.2.10
+[  1] local 10.0.1.10 port 37824 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0299 sec  1.13 GBytes   968 Mbits/sec
+Remote vers FarC2
+    Exécution du client iperf sur Remote vers le serveur 10.0.2.11
+[  1] local 10.0.7.3 port 44002 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0340 sec  1.24 GBytes  1.06 Gbits/sec
+=== Fin du rapport pour wireguard ===
+
+*** Test de ipsec ***
+MainS vers FarS
+    Exécution du client iperf sur MainS vers le serveur 10.0.2.2
+[  1] local 10.0.1.2 port 38500 connected with 10.0.2.2 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0066 sec   434 MBytes   364 Mbits/sec
+MainC1 vers FarC1
+    Exécution du client iperf sur MainC1 vers le serveur 10.0.2.10
+[  1] local 10.0.1.10 port 57840 connected with 10.0.2.10 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.2298 sec   551 MBytes   451 Mbits/sec
+Remote vers FarC2
+    Exécution du client iperf sur Remote vers le serveur 10.0.2.11
+[  1] local 10.4.0.1 port 48106 connected with 10.0.2.11 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0066 sec   255 MBytes   214 Mbits/sec
+=== Fin du rapport pour ipsec ===
+
